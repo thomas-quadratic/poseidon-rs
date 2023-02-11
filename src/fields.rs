@@ -30,5 +30,5 @@ pub trait Field<const N: usize>:
 {
     fn add_assign(&mut self, other: &Self);
     fn mul_assign(&mut self, other: &Self);
-    fn pow_assign(&mut self, other: &Self);
+    fn pow_assign(&mut self, exp: u32);
 }
